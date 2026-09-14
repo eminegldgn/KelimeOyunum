@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121420"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".CategoryActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KATEGORİ SEÇİN"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.2"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/btnGenel"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="🌍 GENEL KÜLTÜR"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@drawable/bg_soru_karti"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/btnBilim"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="🚀 BİLİM &amp; TEKNOLOJİ"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@drawable/bg_soru_karti"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/btnSpor"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="⚽ SPOR"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@drawable/bg_soru_karti"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🏆 EN YÜKSEK SKORLAR 🏆"
+        android:textColor="#FFCC00"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/tvLiderlikTablosu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Henüz kayıtlı skor yok."
+        android:textColor="#A0A0A0"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"/>
+
+</LinearLayout>

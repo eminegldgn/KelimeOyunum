@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#121420"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/lytUstBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btnAnaMenuyeDon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lytUstBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#FF4A4A"
+            android:text="← KATEGORİLERE DÖN"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSkor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SKOR: 0"
+            android:textColor="#00FFCC"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CAN: ❤️ ❤️ ❤️"
+            android:textColor="#FF4A4A"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="end" />
+
+        <TextView
+            android:id="@+id/tvSure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="⏱ 30"
+            android:textColor="#FFCC00"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvOyunBaslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lytUstBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="KELİMECİ"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.3" />
+
+    <LinearLayout
+        android:id="@+id/lytSoruKarti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvOyunBaslik"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_soru_karti"
+        android:padding="20dp"
+        android:elevation="4dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvSoru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soru yükleniyor..."
+            android:textColor="#E0E0E0"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvKelimeKutusu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lytSoruKarti"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="_ _ _ _ _"
+        android:textColor="#00FFCC"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/etTahmin"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/bg_edit_text"
+            android:hint="Tahmininizi Buraya Yazın"
+            android:textColorHint="#555973"
+            android:textColor="#FFFFFF"
+            android:inputType="textCapCharacters"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginBottom="15dp"
+            android:paddingHorizontal="15dp"/>
+
+        <Button
+            android:id="@+id/btnHarfAl"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/bg_soru_karti" android:text="HARF AL (-20 PUAN)"
+            android:textColor="#00FFCC"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+        <Button
+            android:id="@+id/btnPas"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:backgroundTint="#FF9800" android:text="PAS GEÇ (Kalan: 2)"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btnKontrol"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/bg_buton"
+            android:text="CEVAPLA"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:backgroundTint="@null" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
